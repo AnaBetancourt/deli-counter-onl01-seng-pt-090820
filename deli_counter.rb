@@ -26,7 +26,7 @@ def now_serving(line)
     puts "There is nobody waiting to be served!"
   else line.map do |person|
     puts "Currently serving #{person}."
-    line.shift
+    line[0]
   end
  end
 end

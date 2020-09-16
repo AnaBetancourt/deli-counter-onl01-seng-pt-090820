@@ -22,11 +22,13 @@ def take_a_number(deli, name)
 end
 
 def now_serving(line)
-    new_name = []
-    line.count == 0 
+    new_line = []
+  if line.count == 0 
     puts "There is nobody waiting to be served!"
-    name.map do |person|
+  else line.map do |person|
     puts "Currently serving #{person}."
-    name.shift << new_name
+    line.shift << new_line
+  end
  end
+ new_line
 end

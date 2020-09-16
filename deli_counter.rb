@@ -30,5 +30,4 @@ def now_serving(line)
     line.shift << new_line
   end
  end
- new_line
 end

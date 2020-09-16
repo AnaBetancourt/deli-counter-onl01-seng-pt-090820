@@ -27,5 +27,6 @@ def now_serving(name)
     puts "Currently serving #{person}."
     name.shift
     count += 1 
+    
  end
 end

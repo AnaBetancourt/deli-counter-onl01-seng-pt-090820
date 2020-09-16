@@ -22,12 +22,10 @@ def take_a_number(deli, name)
 end
 
 def now_serving(name)
-  if name.count == 0 
+  name.count == 0 
     puts "There is nobody waiting to be served!"
-  else
     name.map do |person|
-     puts "Currently serving #{person}."
-     name.shift
-  end
+    puts "Currently serving #{person}."
+    name.shift
  end
 end

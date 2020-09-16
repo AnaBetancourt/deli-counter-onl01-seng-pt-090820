@@ -21,9 +21,9 @@ def take_a_number(deli, name)
     puts "Welcome, #{name}. You are number #{index + 1} in line."
 end
 
-def now_serving(name)
+def now_serving(line)
     new_name = []
-    name.count == 0 
+    line.count == 0 
     puts "There is nobody waiting to be served!"
     name.map do |person|
     puts "Currently serving #{person}."

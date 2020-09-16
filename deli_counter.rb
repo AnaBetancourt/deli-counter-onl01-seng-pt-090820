@@ -27,6 +27,7 @@ def now_serving(name)
     puts "Currently serving #{person}."
     name.shift
     count += 1 
-    
+    name.count == 0 
+    puts "There is nobody waiting to be served!"
  end
 end
